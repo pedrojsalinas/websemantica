@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:ns0="http://data.utpl.edu.ec/arrozverde/resource/">
+
+  <rdf:Description rdf:about="http://data.utpl.edu.ec/arrozverde/resource/Caso">
+    <ns0:asignacionCodigo rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/Partido_Politico"/>
+    <ns0:asignacionCodigo rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/Empresa"/>
+    <ns0:asignacionCodigo rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/Persona"/>
+    <ns0:asignacionCodigo rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/Pais"/>
+    <ns0:asignacionCodigo rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/Transaccion"/>
+    <ns0:denunciadoPor>
+      <rdf:Description rdf:about="http://data.utpl.edu.ec/arrozverde/resource/SantiagoCuesta">
+        <ns0:type rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/Persona"/>
+        <ns0:apellido>Cuesta</ns0:apellido>
+        <ns0:cargo>Consejero del presidente</ns0:cargo>
+        <ns0:nombre>Santiago</ns0:nombre>
+      </rdf:Description>
+    </ns0:denunciadoPor>
+
+    <ns0:involucrada rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/Partido_Politico"/>
+    <ns0:involucrada rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/Empresa"/>
+    <ns0:involucrada rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/Persona"/>
+    <ns0:involucrada rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/Pais"/>
+    <ns0:involucrada rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/PamelaMartinez"/>
+    <ns0:involucrada rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/JorgeGlas"/>
+    <ns0:involucrada rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/MariadelosAngelesDuarte"/>
+    <ns0:involucrada rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/WalterSolís"/>
+    <ns0:involucrada rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/OlgaMuentes"/>
+    <ns0:involucrada rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/MariaAgustaEnrriquez"/>
+    <ns0:involucrada>
+      <rdf:Description rdf:about="http://data.utpl.edu.ec/arrozverde/resource/Odebrecht">
+        <ns0:type rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/Empresa"/>
+        <ns0:codigoEmpresa>V7</ns0:codigoEmpresa>
+        <ns0:nombreEmpresa>Odebrecht</ns0:nombreEmpresa>
+        <ns0:aporta>2.5 Millones</ns0:aporta>
+        <ns0:entregoAportes>Alianza Pais</ns0:entregoAportes>
+      </rdf:Description>
+    </ns0:involucrada>
+
+    <ns0:líderImplicado rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/Persona"/>
+    <ns0:líderImplicado>
+      <rdf:Description rdf:about="http://data.utpl.edu.ec/arrozverde/resource/AlbertoHildago">
+        <ns0:type rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/Empresa"/>
+        <ns0:codigoEmpresa>V1</ns0:codigoEmpresa>
+        <ns0:nombreEmpresa>Alberto Hildago</ns0:nombreEmpresa>
+      </rdf:Description>
+    </ns0:líderImplicado>
+
+    <ns0:líderImplicado rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/JorgeGlas"/>
+    <ns0:líderImplicado rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/MariadelosAngelesDuarte"/>
+    <ns0:líderImplicado rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/WalterSolís"/>
+    <ns0:líderImplicado rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/OlgaMuentes"/>
+    <ns0:líderImplicado rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/MariaAgustaEnrriquez"/>
+    <ns0:líderImplicado rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/PamelaMartinez"/>
+    <ns0:nombradoPor rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/Persona"/>
+    <ns0:nombradoPor rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/PamelaMartinez"/>
+    <ns0:nombreCaso>Receta Arroz Verde 502</ns0:nombreCaso>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://data.utpl.edu.ec/arrozverde/resource/Persona">
+    <ns0:detenidoEn rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/Provincia"/>
+    <ns0:detenidoEn>
+      <rdf:Description rdf:about="http://data.utpl.edu.ec/arrozverde/resource/Guayaquil">
+        <ns0:nombreProvincia>Guayaquil</ns0:nombreProvincia>
+        <ns0:type>provincia</ns0:type>
+      </rdf:Description>
+    </ns0:detenidoEn>
+
+    <ns0:emite rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/Evidencia"/>
+    <ns0:investigan rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/Caso"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://data.utpl.edu.ec/arrozverde/resource/PamelaMartinez">
+    <ns0:type rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/Persona"/>
+    <ns0:distribuyeDinero rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/Partido_Politico"/>
+    <ns0:apellido>Martinez</ns0:apellido>
+    <ns0:segundoApellido>Loaiza</ns0:segundoApellido>
+    <ns0:codigoPersona>C3/PM</ns0:codigoPersona>
+    <ns0:detenida>Guayas</ns0:detenida>
+    <ns0:nombre>Pamela</ns0:nombre>
+    <ns0:recauda>Dinero Efectivo</ns0:recauda>
+    <ns0:reacuda>DInero por cruce de facturas</ns0:reacuda>
+    <ns0:manejo>caso </ns0:manejo>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://data.utpl.edu.ec/arrozverde/resource/TelconetWEAzul">
+    <ns0:type rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/Empresa"/>
+    <ns0:nombreEmpresa>Telconet WE Azul </ns0:nombreEmpresa>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://data.utpl.edu.ec/arrozverde/resource/Brasil">
+    <ns0:type rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/Pais"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://data.utpl.edu.ec/arrozverde/resource/China">
+    <ns0:type rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/Pais"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://data.utpl.edu.ec/arrozverde/resource/SurCorea">
+    <ns0:type rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/Pais"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://data.utpl.edu.ec/arrozverde/resource/ManuelFontana">
+    <ns0:type rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/Empresa"/>
+    <ns0:codigoEmpresa>V2</ns0:codigoEmpresa>
+    <ns0:nombreEmpresa>Manuel Fontana</ns0:nombreEmpresa>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://data.utpl.edu.ec/arrozverde/resource/MidisaSA">
+    <ns0:type rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/Empresa"/>
+    <ns0:codigoEmpresa>V3</ns0:codigoEmpresa>
+    <ns0:nombreEmpresa>Midisa SA</ns0:nombreEmpresa>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://data.utpl.edu.ec/arrozverde/resource/EdgarSalas">
+    <ns0:type rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/Empresa"/>
+    <ns0:codigoEmpresa>V4</ns0:codigoEmpresa>
+    <ns0:nombreEmpresa>Edgar Salas</ns0:nombreEmpresa>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://data.utpl.edu.ec/arrozverde/resource/PedroVerduga">
+    <ns0:type rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/Empresa"/>
+    <ns0:codigoEmpresa>V5</ns0:codigoEmpresa>
+    <ns0:nombreEmpresa>Pedro Verduga</ns0:nombreEmpresa>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://data.utpl.edu.ec/arrozverde/resource/LuisValero">
+    <ns0:type rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/Empresa"/>
+    <ns0:codigoEmpresa>V6</ns0:codigoEmpresa>
+    <ns0:nombreEmpresa>Luis Valero</ns0:nombreEmpresa>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://data.utpl.edu.ec/arrozverde/resource/SKEngeenering">
+    <ns0:type rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/Empresa"/>
+    <ns0:codigoEmpresa>V8</ns0:codigoEmpresa>
+    <ns0:nombreEmpresa>SK Engeenering</ns0:nombreEmpresa>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://data.utpl.edu.ec/arrozverde/resource/CWNE(JoséAlvear)ExcluidoporL1">
+    <ns0:type rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/Empresa"/>
+    <ns0:codigoEmpresa>V9</ns0:codigoEmpresa>
+    <ns0:nombreEmpresa>CWNE (José Alvear) Excluido por L1</ns0:nombreEmpresa>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://data.utpl.edu.ec/arrozverde/resource/BolívarSánchez">
+    <ns0:type rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/Empresa"/>
+    <ns0:codigoEmpresa>V10</ns0:codigoEmpresa>
+    <ns0:nombreEmpresa>Bolívar Sánchez</ns0:nombreEmpresa>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://data.utpl.edu.ec/arrozverde/resource/TommyTopic">
+    <ns0:type rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/Empresa"/>
+    <ns0:codigoEmpresa>V11</ns0:codigoEmpresa>
+    <ns0:nombreEmpresa>Tommy Topic</ns0:nombreEmpresa>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://data.utpl.edu.ec/arrozverde/resource/Blue_Sr.Phillips">
+    <ns0:type rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/Empresa"/>
+    <ns0:codigoEmpresa>V12</ns0:codigoEmpresa>
+    <ns0:nombreEmpresa>Blue_Sr. Phillips</ns0:nombreEmpresa>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://data.utpl.edu.ec/arrozverde/resource/RafaelCórdovaMetco">
+    <ns0:type rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/Empresa"/>
+    <ns0:codigoEmpresa>V13</ns0:codigoEmpresa>
+    <ns0:nombreEmpresa>Rafael Córdova Metco</ns0:nombreEmpresa>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://data.utpl.edu.ec/arrozverde/resource/CaiRunguo(Sinohydro)">
+    <ns0:type rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/Empresa"/>
+    <ns0:codigoEmpresa>V14</ns0:codigoEmpresa>
+    <ns0:nombreEmpresa>Cai Runguo (Sinohydro)</ns0:nombreEmpresa>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://data.utpl.edu.ec/arrozverde/resource/OsierS.A.">
+    <ns0:type rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/Empresa"/>
+    <ns0:codigoEmpresa>V15</ns0:codigoEmpresa>
+    <ns0:nombreEmpresa>Osier S.A.</ns0:nombreEmpresa>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://data.utpl.edu.ec/arrozverde/resource/TeodoroCalle/TGC">
+    <ns0:type rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/Empresa"/>
+    <ns0:codigoEmpresa>V16</ns0:codigoEmpresa>
+    <ns0:nombreEmpresa>Teodoro Calle/TGC</ns0:nombreEmpresa>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://data.utpl.edu.ec/arrozverde/resource/Consermin">
+    <ns0:type rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/Empresa"/>
+    <ns0:codigoEmpresa>V17</ns0:codigoEmpresa>
+    <ns0:nombreEmpresa>Consermin</ns0:nombreEmpresa>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://data.utpl.edu.ec/arrozverde/resource/FrancisoSuarez">
+    <ns0:type rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/Empresa"/>
+    <ns0:codigoEmpresa>V18</ns0:codigoEmpresa>
+    <ns0:nombreEmpresa>Franciso Suarez</ns0:nombreEmpresa>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://data.utpl.edu.ec/arrozverde/resource/Institución">
+    <ns0:investigan rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/Caso"/>
+    <ns0:nombreInstitucion >Fiscalia del Ecuador </ns0:nombreInstitucion >
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://data.utpl.edu.ec/arrozverde/resource/Transaccion">
+    <ns0:procede rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/Contrato"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://data.utpl.edu.ec/arrozverde/resource/JorgeGlas">
+    <ns0:autoriza rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/PamelaMartinez"/>
+    <ns0:apellido>Glass</ns0:apellido>
+    <ns0:codigoPersona>L1/JG</ns0:codigoPersona>
+    <ns0:nombre>Jorge</ns0:nombre>
+    <ns0:recibeAportes>7.7 Millones</ns0:recibeAportes>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://data.utpl.edu.ec/arrozverde/resource/MariadelosAngelesDuarte">
+    <ns0:autoriza rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/PamelaMartinez"/>
+    <ns0:apellido>Duarte</ns0:apellido>
+    <ns0:codigoPersona>L2/MD</ns0:codigoPersona>
+    <ns0:segundoNombre>De los Ángeles</ns0:segundoNombre>
+    <ns0:nombre>Maria de los Ángeles</ns0:nombre>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://data.utpl.edu.ec/arrozverde/resource/Partido_Politico">
+    <ns0:beneficia rdf:resource="http://data.utpl.edu.ec/arrozverde/resource/Transaccion"/>
+    <ns0:nombrePartido>Aliazan País</ns0:nombrePartido>
+    <ns0:nombre>Aliazan País</ns0:nombre>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://data.utpl.edu.ec/arrozverde/resource/WalterSolís">
+    <ns0:apellido>Solis</ns0:apellido>
+    <ns0:codigoPersona>L3/WS</ns0:codigoPersona>
+    <ns0:nombre>Walter</ns0:nombre>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://data.utpl.edu.ec/arrozverde/resource/OlgaMuentes">
+    <ns0:apellido>Muentes</ns0:apellido>
+    <ns0:codigoPersona>C1/OM</ns0:codigoPersona>
+    <ns0:nombre>Olga</ns0:nombre>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://data.utpl.edu.ec/arrozverde/resource/MariaAgustaEnrriquez">
+    <ns0:apellido>Enríquez</ns0:apellido>
+    <ns0:codigoPersona>C2/ME</ns0:codigoPersona>
+    <ns0:nombre>Maria Agusta</ns0:nombre>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://data.utpl.edu.ec/arrozverde/resource/Pais">
+    <ns0:nombrePais>Sur Corea</ns0:nombrePais>
+    <ns0:nombrePais>China</ns0:nombrePais>
+    <ns0:nombrePais>Brasil </ns0:nombrePais>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://data.utpl.edu.ec/arrozverde/resource/Alianza_Pais">
+    <ns0:recibe>11670000</ns0:recibe>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://data.utpl.edu.ec/arrozverde/resource/RafaelCorrea">
+    <ns0:manejo>caso </ns0:manejo>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://data.utpl.edu.ec/arrozverde/resource/Empresa">
+    <ns0:financio>campaña</ns0:financio>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://data.utpl.edu.ec/arrozverde/resource/AlianzaPais">
+    <ns0:recibeAportes>Odebrecht</ns0:recibeAportes>
+  </rdf:Description>
+
+</rdf:RDF>

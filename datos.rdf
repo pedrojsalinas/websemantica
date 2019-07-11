@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:ns0="http://data.org/PLE/schema/"
+         xmlns:ns1="rdfhttp://data.org/PLE/schema/"
+         xmlns:ns2="dbpediahttp://data.org/PLE/schema/"
+         xmlns:ns3="pexthttp://data.org/PLE/schema/"
+         xmlns:ns4="wlohttp://data.org/PLE/schema/"
+         xmlns:ns5="ptophttp://data.org/PLE/schema/"
+         xmlns:ns6="gdprthttp://data.org/PLE/schema/">
+
+  <rdf:Description rdf:about="http://data.org/PLE/resource/ArrozVerde">
+    <ns0:isPartOf rdf:resource="http://data.org/PLE/resource/CaseReport"/>
+    <ns0:isPartOf rdf:resource="http://data.org/PLE/resource/Investigacion"/>
+    <ns0:involvedAgent rdf:resource="http://data.org/PLE/resource/Implicado"/>
+    <ns0:involvedAgent rdf:resource="http://data.org/PLE/resource/Informante"/>
+    <ns0:involvedAgent rdf:resource="http://data.org/PLE/resource/Detenidos"/>
+    <ns0:sucedioEn rdf:resource="http://data.org/PLE/resource/Periodo"/>
+    <ns0:description>El equipo de periodistas que ha trabajado este informe confirmó que versiones de “Arroz verde 502&quot; están en manos de funcionarios del gobierno de Lenin Moreno. Se verificó además que entre los personajes contactados por Pamela Martínez Loayza está Santiago Cuesta Caputi. El informe arroz verde 502 evidenció cómo el equipo liderado por Pamela Martínez, ex asesora del Presidente Rafael Correa, llevó el detalle de las donaciones que Alianza PAIS recibió de empresas transnacionales y de otras compañías nacionales. Un archivo de excel llamado 03 02 14 establece que se detallaron los aportes voluntarios que recibió PAIS de diversas empresas y ejecutivos. El primero en la lista es V1 (Alberto Hidalgo) representante de la constructora Hidalgo &amp; Hidalgo y primo del actual ministro de Transporte y Obras Públicas, Aurelio Hidalgo.</ns0:description>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://data.org/PLE/resource/AlexisMera">
+    <ns0:type rdf:resource="http://data.org/PLE/resource/Implicado"/>
+    <ns0:type rdf:resource="http://data.org/PLE/resource/Detenidos"/>
+    <ns1:type>
+      <rdf:Description rdf:about="http://data.org/PLE/resource/detencion">
+        <ns0:type>31 de mayo</ns0:type>
+      </rdf:Description>
+    </ns1:type>
+
+    <ns2:occupation rdf:resource="http://data.org/PLE/resource/VicePresidente"/>
+    <ns3:nationalityOf>Alexis</ns3:nationalityOf>
+    <ns4:name>Mera</ns4:name>
+    <ns5:lastName>Maria de los Angeles</ns5:lastName>
+    <ns0:isPartOf rdf:resource="http://data.org/PLE/resource/AlianzaPais"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://data.org/PLE/resource/WalterSolis">
+    <ns0:type rdf:resource="http://data.org/PLE/resource/Implicado"/>
+    <ns0:code rdf:resource="http://data.org/PLE/resource/L3_WS"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://data.org/PLE/resource/OlgaMuentes">
+    <ns0:type rdf:resource="http://data.org/PLE/resource/Implicado"/>
+    <ns0:code rdf:resource="http://data.org/PLE/resource/C1_OM"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://data.org/PLE/resource/Investigacion">
+    <ns0:hasEvidence rdf:resource="http://data.org/PLE/resource/Evidencia"/>
+    <ns0:involvedAgent rdf:resource="http://data.org/PLE/resource/Fiscal"/>
+    <ns0:involvedAgent>
+      <rdf:Description rdf:about="http://data.org/PLE/resource/FranciscoSuarez">
+        <ns0:code rdf:resource="http://data.org/PLE/resource/V18"/>
+      </rdf:Description>
+    </ns0:involvedAgent>
+
+    <ns0:involvedAgent>
+      <rdf:Description rdf:about="http://data.org/PLE/resource/MariaDeLosAngelesDuarte">
+        <ns0:code rdf:resource="http://data.org/PLE/resource/L2_MD"/>
+        <ns4:name>Duarte</ns4:name>
+        <ns5:lastName rdf:resource="http://data.org/PLE/resource/Implicado"/>
+        <ns1:type>
+          <rdf:Description rdf:about="http://data.org/PLE/resource/ExMinistra">
+            <ns0:Ministry>Ecuatoriana</ns0:Ministry>
+          </rdf:Description>
+        </ns1:type>
+
+        <ns2:occupation rdf:resource="http://data.org/PLE/resource/MinisterioDeTransporteYObrasPublicas"/>
+        <ns0:nationalityOf rdf:resource="http://data.org/PLE/resource/AlianzaPais"/>
+        <ns0:isPartOf rdf:resource="http://data.org/PLE/resource/AlianzaPais"/>
+        <ns0:arrestDate rdf:resource="http://data.org/PLE/resource/Implicado"/>
+        <ns0:type rdf:resource="http://data.org/PLE/resource/Detenidos"/>
+      </rdf:Description>
+    </ns0:involvedAgent>
+
+    <ns0:involvedAgent>
+      <rdf:Description rdf:about="http://data.org/PLE/resource/jorgeGlas">
+        <ns0:code rdf:resource="http://data.org/PLE/resource/L1_JG"/>
+        <ns0:first_name>Jorge</ns0:first_name>
+        <ns0:last_name>Glas</ns0:last_name>
+        <ns0:isPartOf rdf:resource="http://data.org/PLE/resource/AlianzaPais"/>
+        <ns0:isPartOf>31 de mayo del 2019.</ns0:isPartOf>
+        <ns6:CriminalData>Lavado de Activos</ns6:CriminalData>
+        <ns0:name>Glas</ns0:name>
+        <ns5:lastName>Glas</ns5:lastName>
+        <ns1:type rdf:resource="http://data.org/PLE/resource/Implicado"/>
+        <ns2:occupation>Ecuatoriana</ns2:occupation>
+        <ns3:nationalityOf>Ecuatoriana</ns3:nationalityOf>
+      </rdf:Description>
+    </ns0:involvedAgent>
+
+    <ns0:involvedAgent>
+      <rdf:Description rdf:about="http://data.org/PLE/resource/Consermin">
+        <ns0:code rdf:resource="http://data.org/PLE/resource/V17"/>
+        <ns0:representative rdf:resource="http://data.org/PLE/resource/EdgarSalas"/>
+      </rdf:Description>
+    </ns0:involvedAgent>
+
+    <ns0:involvedAgent>
+      <rdf:Description rdf:about="http://data.org/PLE/resource/TeodoroCalle">
+        <ns0:code rdf:resource="http://data.org/PLE/resource/V16"/>
+      </rdf:Description>
+    </ns0:involvedAgent>
+
+    <ns0:involvedAgent>
+      <rdf:Description rdf:about="http://data.org/PLE/resource/Osier">
+        <ns0:code rdf:resource="http://data.org/PLE/resource/V15"/>
+      </rdf:Description>
+    </ns0:involvedAgent>
+
+    <ns0:involvedAgent>
+      <rdf:Description rdf:about="http://data.org/PLE/resource/CaiRunguo">
+        <ns0:code rdf:resource="http://data.org/PLE/resource/V14"/>
+      </rdf:Description>
+    </ns0:involvedAgent>
+
+    <ns0:involvedAgent rdf:resource="http://data.org/PLE/resource/AlianzaPais"/>
+    <ns0:involvedAgent rdf:resource="http://data.org/PLE/resource/EdgarSalas"/>
+    <ns0:involvedAgent>
+      <rdf:Description rdf:about="http://data.org/PLE/resource/PedroVerduga">
+        <ns0:code rdf:resource="http://data.org/PLE/resource/V5"/>
+        <ns0:hasDepositDate>14 de noviembre de 2013</ns0:hasDepositDate>
+        <ns0:Payment>1.000.000</ns0:Payment>
+      </rdf:Description>
+    </ns0:involvedAgent>
+
+    <ns0:involvedAgent>
+      <rdf:Description rdf:about="http://data.org/PLE/resource/LuisValero">
+        <ns0:code rdf:resource="http://data.org/PLE/resource/V6"/>
+        <ns0:hasDepositDate>12 de noviembre de 2013</ns0:hasDepositDate>
+        <ns0:Payment>1.000.000</ns0:Payment>
+      </rdf:Description>
+    </ns0:involvedAgent>
+
+    <ns0:involvedAgent>
+      <rdf:Description rdf:about="http://data.org/PLE/resource/RafaelCordova">
+        <ns0:code rdf:resource="http://data.org/PLE/resource/V13"/>
+      </rdf:Description>
+    </ns0:involvedAgent>
+
+    <ns0:involvedAgent rdf:resource="http://data.org/PLE/resource/BluePhillips"/>
+    <ns0:involvedAgent rdf:resource="http://data.org/PLE/resource/TommyTopic"/>
+    <ns0:involvedAgent>
+      <rdf:Description rdf:about="http://data.org/PLE/resource/Midisa">
+        <ns0:code rdf:resource="http://data.org/PLE/resource/V3"/>
+        <ns0:hasDepositDate>10 de diciembre de 2013</ns0:hasDepositDate>
+        <ns0:Payment>1.000.000</ns0:Payment>
+      </rdf:Description>
+    </ns0:involvedAgent>
+
+    <ns0:involvedAgent>
+      <rdf:Description rdf:about="http://data.org/PLE/resource/ManuelFontana">
+        <ns0:code rdf:resource="http://data.org/PLE/resource/V2"/>
+        <ns0:Payment>500.000</ns0:Payment>
+        <ns0:hasDepositDate>2 de enero de 2014</ns0:hasDepositDate>
+      </rdf:Description>
+    </ns0:involvedAgent>
+
+    <ns0:involvedAgent>
+      <rdf:Description rdf:about="http://data.org/PLE/resource/SKEngeenering">
+        <ns0:code rdf:resource="http://data.org/PLE/resource/V8"/>
+        <ns0:hasDepositDate>24 de diciembre de 2014</ns0:hasDepositDate>
+      </rdf:Description>
+    </ns0:involvedAgent>
+
+    <ns0:involvedAgent>
+      <rdf:Description rdf:about="http://data.org/PLE/resource/CWNE">
+        <ns0:code rdf:resource="http://data.org/PLE/resource/V9"/>
+      </rdf:Description>
+    </ns0:involvedAgent>
+
+    <ns0:involvedAgent>
+      <rdf:Description rdf:about="http://data.org/PLE/resource/HeHConstrucciones">
+        <ns0:code rdf:resource="http://data.org/PLE/resource/V1"/>
+        <ns0:hasDepositDate>6 de noviembre de 2013</ns0:hasDepositDate>
+        <ns0:Payment>200.000</ns0:Payment>
+      </rdf:Description>
+    </ns0:involvedAgent>
+
+    <ns0:involvedAgent rdf:resource="http://data.org/PLE/resource/BolivarSanches"/>
+    <ns0:involvedAgent>
+      <rdf:Description rdf:about="http://data.org/PLE/resource/Odebretch">
+        <ns0:code rdf:resource="http://data.org/PLE/resource/V7"/>
+        <ns0:hasDepositDate>9 de septiembre de 2013</ns0:hasDepositDate>
+        <ns0:Payment>6.979.80</ns0:Payment>
+      </rdf:Description>
+    </ns0:involvedAgent>
+
+    <ns0:involvedAgent>Alexis Mera</ns0:involvedAgent>
+    <ns0:involvedAgent rdf:resource="http://data.org/PLE/resource/PoliticalOrganization"/>
+    <ns0:involvedAgent rdf:resource="http://data.org/PLE/resource/OlgaMuentes"/>
+    <ns0:involvedAgent>
+      <rdf:Description rdf:about="http://data.org/PLE/resource/MariaAgustaEnriquez">
+        <ns0:code rdf:resource="http://data.org/PLE/resource/C2_ME"/>
+      </rdf:Description>
+    </ns0:involvedAgent>
+
+    <ns0:involvedAgent>
+      <rdf:Description rdf:about="http://data.org/PLE/resource/PamelaMartinezLoaiza">
+        <ns0:code rdf:resource="http://data.org/PLE/resource/C3_PM"/>
+      </rdf:Description>
+    </ns0:involvedAgent>
+
+    <ns0:involvedAgent>
+      <rdf:Description rdf:about="http://data.org/PLE/resource/BolivarSanchez">
+        <ns0:code rdf:resource="http://data.org/PLE/resource/V10"/>
+      </rdf:Description>
+    </ns0:involvedAgent>
+
+    <ns0:involvedAgent>
+      <rdf:Description rdf:about="http://data.org/PLE/resource/TomiTopik">
+        <ns0:code rdf:resource="http://data.org/PLE/resource/V11"/>
+      </rdf:Description>
+    </ns0:involvedAgent>
+
+    <ns0:involvedAgent>
+      <rdf:Description rdf:about="http://data.org/PLE/resource/BluePhilips">
+        <ns0:code rdf:resource="http://data.org/PLE/resource/V12"/>
+      </rdf:Description>
+    </ns0:involvedAgent>
+
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://data.org/PLE/resource/Fiscal">
+    <ns0:isPartOf rdf:resource="http://data.org/PLE/resource/Investigacion"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://data.org/PLE/resource/Diana_Salazar">
+    <ns0:professionOrOccupation rdf:resource="http://data.org/PLE/resource/Fiscal"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://data.org/PLE/resource/EdgarSalas">
+    <ns0:code rdf:resource="http://data.org/PLE/resource/V4"/>
+    <ns0:hasDepositDate>3 de febrero de 2014</ns0:hasDepositDate>
+    <ns0:Payment>300.000</ns0:Payment>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://data.org/PLE/resource/AlianzaPais">
+    <ns0:has rdf:resource="http://data.org/PLE/resource/Contacto"/>
+    <ns0:description>Partido politico del ex presidente Rafael Correa</ns0:description>
+    <ns0:Type>
+      <rdf:Description rdf:about="http://data.org/PLE/resource/Organization">
+        <ns0:locatedIn>
+          <rdf:Description rdf:about="http://data.org/PLE/resource/person">
+            <ns0:realiza  rdf:resource="http://data.org/PLE/resource/Transacciones"/>
+            <ns0:recibe rdf:resource="http://data.org/PLE/resource/codigo"/>
+          </rdf:Description>
+        </ns0:locatedIn>
+
+        <ns0:Organization rdf:resource="http://data.org/PLE/resource/Transacciones"/>
+      </rdf:Description>
+    </ns0:Type>
+
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://data.org/PLE/resource/PartidoPolitico">
+    <ns0:P11iparticipatedin rdf:resource="http://data.org/PLE/resource/CampaniaPolitica2016"/>
+    <ns0:delega rdf:resource="http://data.org/PLE/resource/Transacciones"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://data.org/PLE/resource/Transacciones">
+    <ns0:Financiaron rdf:resource="http://data.org/PLE/resource/CampañaPolitica"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://data.org/PLE/resource/Implicado">
+    <ns0:has rdf:resource="http://data.org/PLE/resource/AccionLegal"/>
+  </rdf:Description>
+
+</rdf:RDF>
