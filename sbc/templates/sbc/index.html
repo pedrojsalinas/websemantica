@@ -43,7 +43,8 @@
                 {% for items in datos %}
                 <tr>
                     {% for item in items %}
-                    <td>{{ item }}</td>
+                    <td style="word-wrap: break-word;min-width: 160px;max-width: 160px;"><a href="{{ item }}">{{item}}</a>
+                    </td>
                     {% endfor %}
                 </tr>
                 {% endfor %}
@@ -57,9 +58,6 @@
     datos = {{datos|safe}};
     const texto = document.getElementById("texto").textContent;
 
-    console.log('datos');
-    console.log(datos);
-    console.log(texto);
 
     function highlight() {
 
@@ -67,19 +65,18 @@
         let textoSec;
         datos.forEach(element => {
             value = element[0];
-            var startingIndex = text.indexOf(value); //The string index where the value begins in the paragraph
+            var startingIndex = text.indexOf(value); 
 
 
-            if (startingIndex != -1) { //If the value is within the text
-
-                var endingIndex = startingIndex + value.length; //The string index where the value ends is just the length of the
+            if (startingIndex != -1) { 
+                var endingIndex = startingIndex + value.length; 
 
                 var highlightedText = text.slice(0,
-                startingIndex); //The text from the beginning to the start of the highlight
-                highlightedText += "<span style=\"background:yellow;\">"; //Add the HTML which will cause the highlight
-                highlightedText += text.slice(startingIndex, endingIndex); //Add the text to highlight
-                highlightedText += "</span>"; //Add the HTML which will cause the end of the highlight
-                highlightedText += text.slice(endingIndex); //Add the remaining text
+                startingIndex); 
+                highlightedText += "<span style=\"background:yellow;\">"; 
+                highlightedText += text.slice(startingIndex, endingIndex);
+                highlightedText += "</span>";
+                highlightedText += text.slice(endingIndex); 
 
             }
             textoSec = highlightedText;
