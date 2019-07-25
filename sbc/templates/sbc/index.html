@@ -19,18 +19,27 @@
 {% if texto %}
 {% if datos %}
 <div class="row mt-5">
-    <div class="col-sm-6 col-12">
+    <div class="col-sm-12 col-12">
         <div class="card">
             <div class="card-header">
                 Texto Original
             </div>
             <div class="card-body">
-                <p class="card-text text-justify" id="texto">{{texto}}</p>
+                <p class="card-text text-justify" id="texto"> {{texto}}</p>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+        </div>
+        <div class="card mt-3">
+            <div class="card-header">
+                Texto Analizado
+            </div>
+            <div class="card-body">
+                <p class="card-text text-justify"> {{textoAnalizado | safe}}</p>
                 <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
             </div>
         </div>
     </div>
-    <div class="col-sm-6 col-12">
+    <div class="col-sm-12 col-12 mt-3">
         <table class="table table-striped">
             <thead>
                 <tr>
@@ -43,7 +52,8 @@
                 {% for items in datos %}
                 <tr>
                     {% for item in items %}
-                    <td style="word-wrap: break-word;min-width: 160px;max-width: 160px;"><a href="{{ item }}">{{item}}</a>
+                    <td style="word-wrap: break-word;min-width: 160px;max-width: 160px;"><a
+                            href="{{ item }}">{{item}}</a>
                     </td>
                     {% endfor %}
                 </tr>
@@ -55,7 +65,7 @@
 </div>
 
 <script type="text/javascript">
-    datos = {{datos|safe}};
+    datos = {{datos | safe}};
     const texto = document.getElementById("texto").textContent;
 
 
@@ -65,18 +75,18 @@
         let textoSec;
         datos.forEach(element => {
             value = element[0];
-            var startingIndex = text.indexOf(value); 
+            var startingIndex = text.indexOf(value);
 
 
-            if (startingIndex != -1) { 
-                var endingIndex = startingIndex + value.length; 
+            if (startingIndex != -1) {
+                var endingIndex = startingIndex + value.length;
 
                 var highlightedText = text.slice(0,
-                startingIndex); 
-                highlightedText += "<span style=\"background:yellow;\">"; 
+                    startingIndex);
+                highlightedText += "<span style=\"background:yellow;\">";
                 highlightedText += text.slice(startingIndex, endingIndex);
                 highlightedText += "</span>";
-                highlightedText += text.slice(endingIndex); 
+                highlightedText += text.slice(endingIndex);
 
             }
             textoSec = highlightedText;
@@ -84,7 +94,7 @@
         document.getElementById("texto").innerHTML = textoSec;
 
     }
-    highlight();
+    // highlight();
 </script>
 
 

@@ -10,6 +10,7 @@ from collections import OrderedDict
 import itertools
 from SPARQLWrapper import SPARQLWrapper, JSON
 
+
 class IndexView(TemplateView):
     '''Metodo que renderiza la plantilla index.html'''
     template_name = 'sbc/index.html'
@@ -24,23 +25,18 @@ class IndexView(TemplateView):
         if form.is_valid():
             # obtiene datos del formulario
             text = form.cleaned_data['consulta']
-            # asigan texto inicial a variable
-            initTexto = text
-            print('---'*10)
-            print(initTexto)
-            print('---'*10)
-            # token = Tokenizador()
             semantico = Semantico()
-            # datos = token.limpiezaDatos(text)
-            datosTest = semantico.consultaVirutoso(text)
-            # print(datosTest)
+            datos, entidades = semantico.consultaVirutoso(text)
+            textoAnalizado = semantico.textoHtml(text, entidades)
             form = SbcForm()
-            args = {"datos": datosTest, "form": form, "texto": initTexto}
+            args = {"datos": datos, "form": form,
+                    "texto": text, "textoAnalizado": textoAnalizado}
         return render(request, self.template_name, args)
 
 
 class Tokenizador():
     '''Clase que analiza el texto ingresado por formulario, reconoce entidades y hace consulta sparql por cada entidad encontrada.'''
+
     def limpiezaDatos(self, text):
         # libreria spacy
         nlp = es_core_news_sm.load()
@@ -65,9 +61,9 @@ class Tokenizador():
                     tripleta.append(predicado)
                     tripleta.append(objeto)
                     datos.append(tripleta)
-        # elimina duplicados 
+        # elimina duplicados
         datos = OrderedDict((tuple(x), x) for x in datos).values()
-        lista = [] 
+        lista = []
         for i in datos:
             lista.append(i)
         return lista
@@ -81,15 +77,18 @@ class Semantico():
         text = self.nlp(texto)
         tokenized_sentences = [sentence.text for sentence in text.sents]
         datos = []
+        entidades = []
         for sentence in tokenized_sentences:
             for entity in self.nlp(sentence).ents:
+                entidades.append(entity.text)
+                # consulta mejorada
                 consulta = """
                 SELECT ?s ?p ?o
                     WHERE 
                         { 
-                            ?s ?p ?o .FILTER regex(str(?s), "%s") .
+                           ?s ?p ?o .FILTER (regex(str(?s), "%s") || regex(str(?o), "%s")) .
                         }
-                        """ % (entity.text)
+                        """ % (entity.text, entity.text)
                 self.sbcEndpoint.setQuery(consulta)
                 self.sbcEndpoint.setReturnFormat(JSON)
                 results = self.sbcEndpoint.query().convert()
@@ -98,11 +97,23 @@ class Semantico():
                     listaS = result["s"]["value"]
                     listaP = result["p"]["value"]
                     listaO = result["o"]["value"]
+                    # por si sale con ese link no agregar (revisar)
+                    # if listaO.startswith('http://www.openlinks'):
                     lista.append(listaS)
                     lista.append(listaP)
                     lista.append(listaO)
                     datos.append(lista)
-        return datos
+        # Eliminando duplicados
+        # entidades = list(set(entidades))
+        return datos, entidades
+
+    def textoHtml(self, texto, entidades):
+        for palabra in entidades:
+            if palabra in texto:
+                url = '<a href = "http://localhost:8080/negociador/page/{}">{}</a>'.format(palabra,palabra)
+                if url not in texto:
+                    texto = texto.replace(palabra, url)
+        return texto
 
     def consultaPorUri(self, uri):
         consulta = """
